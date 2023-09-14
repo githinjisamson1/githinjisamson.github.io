@@ -225,7 +225,7 @@ footer {
 .footer-text {
   font-weight: 200;
 }
-.footer-text a{
+.footer-text a {
   text-decoration: none;
   color: var(--white);
 }
@@ -233,4 +233,8 @@ footer {
   text-decoration: none;
   color: var(--white);
   margin-right: 10px;
+  transition: all 300ms ease;
+}
+.social-icon:hover {
+  font-size: 1.25rem;
 }
