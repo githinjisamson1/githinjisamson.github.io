@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background-color: grey;
+  }
+  div{
+    background-color: grey;
+  }
+  header, ul.navlinks{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 48, 14);
+  }
+  ul{
+    list-style: none;
+  }
+  h1{
+    color: yellowgreen;
+    background-color: black;
+    border: 8px solid rgb(68, 35, 35);
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    transition: box-shadow 0.8s;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  h1:hover{
+    background-color: white;
+    box-shadow: 210px 2px 3px rgb(5, 77, 21) inset;
+  }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navlinks li{
+    margin-right: 100px;
+    padding: 0;
+    border: 5px solid rgb(61, 56, 56);
+    color: white;
+    transition: box-shadow 1.2s;
+    border-radius: 10px;
+    text-decoration: none;
+    
+  }
+  .navlinks li:hover{
+    background-color: black;
+    box-shadow: 0px 3px 3px;
+    box-shadow: 200px 0px 0px white inset;
+  }
+  .navlinks li:last-child{
+    margin-right: 500px
+  }
+  .main{
+    background-color: white;
+  }
+    .images {
+      display: flex;
+      float: left;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      animation-name: slide1;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      transition-duration: 2s;
+      /*background-color: grey;*/
+  }
+    @keyframes slide1{
+      0% {
+      left: 0vw;
+  }
+  15% {
+      left: 0vw;
+  }
+  
+  20% {
+      left: -20vw;
+  }
+  32% {
+      left: -80vw;
+  }
+  35% {
+      left: -120vw;
+  }
+  47% {
+      left: -160vw;
+  }
+  50% {
+      left: -200vw;
+  }
+  63% {
+      left: -240vw;
+  }
+  66% {
+      left: -280vw;
+  }
+  79% {
+      left: -320vw;
+  }
+  82% {
+      left: -400vw;
+  }
+  100% {
+      left: 0vw;
+  }
+    }
+  .about h2{
+    text-align: left;
+    justify-content: left;
+    margin-left: 200px;
+    color: rgb(80, 68, 2);
+    font-weight: bold;
+  }
+  .about p{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: black;
+  }
+  .likes h2{
+    margin-left: 100px;
+    justify-content:left;
+    align-items: left;
+    display: inline-block;
+  }
+  .ul li{
+    margin-left: 100px;
+    justify-content:left;
+    align-items: left;
+    list-style-type: square;
+  }
+  .likes{
+    margin-left: 100px;
+    background-color: grey;
+  }
+  .dislikes{
+    margin-left: 100px;
+    background-color: grey;
+  }
+  h3{
+    color: black;
+  }
+   #Photos{
+    margin-left: 200px;
+    color: rgb(75, 64, 2);
+    align-items: left;
+    background-color: grey;
+  }
+  .about{
+    background-color: grey;
+  }
+  .highlight{
+    text-align: left;
+    justify-content: left;
+    color: rgb(80, 68, 2);
+    font-weight: bold;
+  }
+  .show{
+    width: 1800px;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgb(102, 42, 42);
+  }
+  footer{
+    background-color: aqua;
+    align-items: center;
+    margin-left: 300px;
+  }
+  .footer{
+    margin-left: 100px;
+    justify-content: left;
+  }
+  button{
+    transition: box-shadow 0.8s;
+    background-color: blue;
+    color: white;
+  }
+  button:hover{
+    box-shadow: 210px 2px 3px green inset;
+    background-color: red;
+  }
+  a{
+    text-decoration: none;
+    color: yellowgreen;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Backlo Christian</h1>
+    <nav class="navigation">
+      <ul class="navlinks">
+        <li><a href="#about"><strong>About</strong></a></li>
+        <li><a href="#Photos"><strong>Photos</strong></a></li>
+        <li><a href="#ld"><strong>Likes and Dislikes</strong></a></li>
+      </ul>      
+    </nav>
+  </header>
+  <br>
+  <div class="main">
+    <div>
+        <div class="about">
+            <h2 id="about">About Backlo</h2>
+        <br>
+        <p>
+          I'm a passionate and driven individual named Christian, hailing from the vibrant city of Nairobi, Kenya. Currently, I'm on an exciting journey as a software engineering student at Moringa School, specifically in the Spartans class. My love for technology is matched only by my enthusiasm for sports and music.
+
+Outside the world of coding, you'll often find me on the soccer field, discussing the latest Formula 1 races, or enjoying the adrenaline rush of wrestling and basketball. When it comes to music, hip-hop rhythms fuel my creativity and keep me motivated.
+
+My academic journey includes earning a degree from Egerton University, but I'm not stopping there. I'm committed to upscaling my skills in software engineering to tackle real-world problems head-on. My goal is to leverage technology as a force for positive change, and I believe that the solutions to many global challenges lie within the realm of software development.
+
+Beyond my professional aspirations, I'm an avid traveler who relishes the opportunity to explore new places and cultures. Meeting new people from diverse backgrounds fuels my curiosity and broadens my perspective on the world.
+
+In a nutshell, I'm a dedicated software engineering student with a passion for sports, music, and global exploration. I aspire to make a meaningful impact by leveraging my skills and knowledge in the tech world. Let's connect and embark on this exciting journey together!
+        </p>
+      </div>
+      <div class="likes">
+        <h2><span class="highlight" id="ld">Likes and Dislikes</span></h2>
+        <br>
+        <h3 class = "likes"><strong>Likes</strong></h3>
+        <p><ul class="ul">
+          <li>Soccer</li>
+          <li>Formula 1</li>
+          <li>Wrestling</li>
+        </ul></p>
+              <h3 class = "dislikes"><strong>Dislikes</strong></h3>
+        <p><ul class="ul">
+          <li>Bad weather</li>
+          <li>high places</li>
+          <li>Ducks</li>
+        </ul></p>
+      </div>
+      <br>
+      <div class="white">
+        <h2 id="Photos"><span class="highlight">Me in Photos</span></h2>
+      <br>
+      <div class="show">
+        <div class="images">
+            <img src="https://sportsbase.io/images/gpfans/copy_704x396/606b91b75626c27a73fdf6bc47c7827e7d89aa3c.jpg" alt="#">
+            <img src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-22/fifa-22-shared-assets/common/fifa-22-featured-image.png.adapt.crop191x100.1200w.png" alt="#">
+            <img src="https://e0.365dm.com/22/09/2048x1152/skysports-premier-league-promo_5897092.png" alt="#">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goal.com%2Fen%2Flists%2Fsix-reasons-man-utd-struggling-score-goals-marcus-rashford%2Fblt59e08ca64ff7162a&psig=AOvVaw132--i-OdAb_2RR537NFxE&ust=1694778716278000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCOCso7WFqoEDFQAAAAAdAAAAABAD" alt="#">
+            <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fhiddenremote.com%2Ffiles%2Fimage-exchange%2F2021%2F12%2Fie_81933.jpeg" alt="#">
+            <img src="https://img.redbull.com/images/c_crop,x_0,y_66,h_864,w_1920/c_fill,w_1680,h_756/q_auto,f_auto/redbullcom/2020/9/16/qsavzzs1hulerklkkzzp/ac-header" alt="#">
+            <img src="https://i.ytimg.com/vi/ti5slT-XqII/maxresdefault.jpg" alt="#">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/64713edcdb174f931db26209/Roman-Reigns-and-Solo-Sikoa-are-set-to-appear-on-the-KO-Show-/960x0.jpg?format=jpg&width=1440" alt="#">       
+            </div> 
+      </div>
+           
+      </div>     
+    </div>
+  </div>
+</body>
+<div class="footer">
+    <footer>
+        <div class="form">
+            <h2>Contact Me</h2>
+            <form action="submit.php" method="post">
+                <div class="formgroup">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="formgroup">
+                    <label for="e-mail">e-mail</label>
+                    <input type="text" id="e-mail" name="e-mail" required>
+                </div>
+                <div class="formgroup">
+                    <label for="message">message</label>
+                    <input type="text" id="message" name="message" required>
+                </div>
+                <div class="formgroup">
+                    <button>Submit</button>
+                </div>
+            </form>
+    
+        </div>
+    </footer>
+</div>
+</html>
