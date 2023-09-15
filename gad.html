@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gad Ongoro</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ::-webkit-scrollbar{
+            width: 11px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(0, 120, 255);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(0, 170, 255);
+        }
+        ::-webkit-scrollbar-thumb:active{
+            background-color: rgb(0, 100, 250) ;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+
+            background-image: url("https://img.freepik.com/free-vector/gradient-geometrical-shapes-dark-background_23-2148423541.jpg?size=626&ext=jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            background: linear-gradient(to bottom right, rgba(197, 4, 133, 0.473), rgba(0, 55, 80, 0.795));
+
+            animation-name: header;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes header {
+            0% {box-shadow: 0 -5px 0 0 rgba(0, 255, 255, 1.0) inset;}
+            20% {box-shadow: 0 -5px 0 0 rgba(0, 255, 255, 0.7) inset;}
+            40% {box-shadow: 0 -5px 0 0 rgba(0, 255, 255, 0.5) inset;}
+            60% {box-shadow: 0 -5px 0 0 rgba(0, 255, 255, 0.6) inset;}
+            80% {box-shadow: 0 -5px 0 0 rgba(0, 255, 255, 0.7) inset;}
+            100% {box-shadow: 0 -5px 0 0 rgb(0, 255, 255, 1.0) inset;}
+        }
+        h1{
+            font-size: 50px;
+        }
+        .header .nav-icons{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+        .header img{
+            width: 50px;
+            cursor: pointer;
+            border-radius: 40px;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .header img:hover{
+            box-shadow: 0 0 30px 5px cyan;
+            transform: scale(1.2);
+        }
+
+        .main{
+            width: 60%;
+            padding: 20px;
+            margin: 20px auto;
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: rgba(0, 204, 255, 0.1);
+            color: rgb(255, 255, 255);
+            transition: all 0.3s;
+        }
+        .main:hover{
+            transform: scale(1.05);
+        }
+        .about p{
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            line-height: 30px;
+        }
+        .footer{
+            background: linear-gradient(to bottom right, rgba(100, 50, 133, 0.5), rgba(0, 50, 70, 0.5));
+            width: 100%;
+            padding: 10px;
+
+            backdrop-filter: blur(10px);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer .contact{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .contact img{
+            width:30px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .footer .contact img:hover{
+            box-shadow: 0 0 25px 5px cyan;
+            transform: scale(1.2);
+        }
+
+        /* media queries */
+        @media screen and (max-width:600px){
+            .header .nav-icons{
+                width:80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav-icons">
+            <img src="https://cdn-icons-png.flaticon.com/128/4394/4394041.png" alt="Home">
+            <img src="https://cdn-icons-png.flaticon.com/128/9872/9872145.png" alt="About">
+            <img src="https://cdn-icons-png.flaticon.com/128/8367/8367884.png" alt="Contact">
+            <img src="https://cdn-icons-png.flaticon.com/128/10649/10649044.png" alt="School">
+            <img src="https://cdn-icons-png.flaticon.com/128/8502/8502384.png" alt="">
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="name-div">
+            <h1 style="font-family: sans-serif, Georgia, 'Times New Roman', Times, serif; color: cyan;"> Hi, I'm Gad </h1>
+        </div>
+
+        <div class="about">
+            <p> 
+                A software engineering student at Moringa School, passionate about crafting visually engaging and user-friendly digital experiences.
+                With a solid foundation in HTML, CSS, and JavaScript, I specialize in turning design concepts into interactive, responsive websites.
+                My commitment to staying updated with the latest web technologies ensures that I create cutting-edge solutions. 
+                <br> <br>
+                I thrive in collaborative environments and am dedicated to delivering innovative web solutions that captivate users. 
+                Let's connect and explore the world of front-end development together! 
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <img src="https://cdn-icons-png.flaticon.com/128/11516/11516219.png" alt="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="X">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn">
+        </div>
+
+        <p style="color: cyan;"> &copy; Gad-Ongoro </p>
+    </div>
+</body>
+</html>
